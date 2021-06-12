@@ -1,0 +1,52 @@
+header {
+    // display: flex;
+    // padding: 1.5vw;
+    // background: #2c3c4a;
+    // background: linear-gradient(0, rgba(5,12,20,1) 0%, rgba(44,60,74,1) 100%);
+    position: relative;
+    background-repeat: no-repeat;
+    background-image: url(../img/hero-bg.jpeg);
+    
+    .overlay {
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        // height: 100%;
+        position: absolute;
+        background:rgba(5,12,20,0.5);
+    }
+
+    .header-content {
+        position: relative;
+    }
+
+    nav {
+        .name {
+            font-family: 'Cormorant Garamond', serif;
+            color: #fff;
+        }
+    }
+    .hero {
+        // height: 300px;
+        // position: relative;
+        // background-size: cover;
+        // background-repeat: no-repeat;
+        // background-image: url(../img/hero-bg.jpeg);
+    
+        @media only screen and (min-width: 768px) {
+            height: 600px;
+        }
+
+    }
+
+    .logo {
+        width: 6vw;
+    }
+
+    nav {
+    }
+}
