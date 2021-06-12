@@ -1,3 +1,37 @@
 body {
-    background: blue;
+    background: red;
+}
+
+.hero {
+    height: 300px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/hero-bg.jpeg);
+
+    @media only screen and (min-width: 768px) {
+        height: 600px;
+    }
+
+    .overlay {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background:rgba(0,0,0,0.4);
+    }
+}
+
+.summary {
+    background-color: yellow;
+}
+
+.services {
+    background-color: blue;
+}
+
+.academic {
+     background-color: pink;
 }
