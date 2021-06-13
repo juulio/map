@@ -2,7 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -54,9 +54,12 @@ table {
 }
 
 header {
+  font-size: 1.1vw;
   position: relative;
+  letter-spacing: 0.2vw;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(../img/hero-bg.jpeg);
+  background-image: url(../img/header-bg.jpg);
 }
 
 header .overlay {
@@ -65,16 +68,47 @@ header .overlay {
   right: 0;
   bottom: 0;
   position: absolute;
-  background: rgba(5, 12, 20, 0.5);
+  background: rgba(5, 12, 20, 0.7);
 }
 
 header .header-content {
   position: relative;
 }
 
+header nav {
+  display: flex;
+  padding: 1.8vw;
+  justify-content: space-between;
+}
+
 header nav .name {
-  font-family: 'Cormorant Garamond', serif;
-  color: #fff;
+  font-size: 1.4vw;
+}
+
+header nav .name span {
+  color: #bba37e;
+}
+
+header nav ul {
+  justify-content: space-between;
+}
+
+header nav li {
+  float: left;
+  padding-right: 1vw;
+}
+
+@media only screen and (min-width: 1400px) {
+  header nav {
+    font-size: 22px;
+  }
+}
+
+header .hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 @media only screen and (min-width: 768px) {
@@ -83,12 +117,10 @@ header nav .name {
   }
 }
 
-header .logo {
-  width: 6vw;
-}
-
 body {
+  color: #FFF;
   background: #fff;
+  font-family: 'Cormorant Garamond', serif;
 }
 
 main {
