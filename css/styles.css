@@ -54,7 +54,7 @@ table {
 }
 
 header {
-  font-size: 1.1vw;
+  font-size: 1.4vw;
   position: relative;
   letter-spacing: 0.2vw;
   background-size: cover;
@@ -79,10 +79,6 @@ header nav {
   display: flex;
   padding: 1.8vw;
   justify-content: space-between;
-}
-
-header nav .name {
-  font-size: 1.4vw;
 }
 
 header nav .name span {
@@ -113,8 +109,13 @@ header .hero {
 
 @media only screen and (min-width: 768px) {
   header .hero {
-    height: 600px;
+    height: 500px;
   }
+}
+
+header .hero h1 {
+  margin-top: 4vh;
+  font-size: 2.6vw;
 }
 
 body {
@@ -128,12 +129,67 @@ main {
   margin: 0 auto;
 }
 
-.summary {
-  background-color: yellow;
+h1, h2 {
+  letter-spacing: 0.4vw;
 }
 
-.services {
-  background-color: blue;
+h2 {
+  color: #000;
+  font-size: 2vw;
+  margin-bottom: 2vw;
+}
+
+.container {
+  color: #000;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.summary .column {
+  text-align: center;
+  padding: 3vw;
+}
+
+.summary .no-padding {
+  padding: 0;
+}
+
+.summary ul {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.summary li {
+  text-align: left;
+  margin-bottom: 1vw;
+  font-size: 1.3vw;
+}
+
+.summary .lawyer-container {
+  padding: 0;
+  background-image: url("../img/lawyer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.services .ambar {
+  background-color: #bba37e;
+}
+
+.services .light-ambar {
+  background-color: #cec7bd;
+}
+
+.services .column {
+  padding: 2vw;
 }
 
 .academic {

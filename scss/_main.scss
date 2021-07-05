@@ -10,14 +10,71 @@ main {
     margin: 0 auto;
 }
 
+h1, h2 {
+    letter-spacing: 0.4vw;
+}
 
+h2 {
+    color: #000;
+    font-size: 2vw;
+    margin-bottom: 2vw;
+}
+
+.container {
+    color: #000;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
 
 .summary {
-    background-color: yellow;
+    .column {
+        text-align: center;
+        padding: 3vw;
+    }
+
+    .no-padding {
+        padding: 0;
+    }
+
+    ul {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    li {
+        text-align: left;
+        margin-bottom: 1vw;
+        font-size: 1.3vw;
+    }
+
+    .lawyer-container {
+        padding: 0;
+        background-image: url('../img/lawyer.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
 
 .services {
-    background-color: blue;
+    .ambar {
+        background-color: #bba37e;
+    }
+
+    .light-ambar {
+        background-color: #cec7bd;
+    }
+    
+    .column {
+        padding: 2vw;
+    }
 }
 
 .academic {
